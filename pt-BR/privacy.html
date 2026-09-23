@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — FeltIt</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f7;
+    --border: #e2e2e5;
+    --text: #1c1c1e;
+    --muted: #6a6a6f;
+    --accent: #E8724A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --border: #2c2c31;
+      --text: #f2f2f4;
+      --muted: #9a9aa1;
+      --accent: #F08A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .updated { color: var(--muted); font-size: 0.95rem; margin-bottom: 32px; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px 8px;
+    margin: 32px 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 14px; }
+  .summary strong { display: block; margin-bottom: 10px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
+</style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/privacy.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<script src="../lang.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="Idioma: Português (Brasil)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>Português (Brasil)</span></summary>
+    <ul>
+      <li><a href="../privacy.html" hreflang="en" lang="en" data-lang="en">English</a></li>
+      <li><a href="../de/privacy.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="../fr/privacy.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li>
+      <li><a href="../es/privacy.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="../it/privacy.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR" aria-current="page">Português (Brasil)</a></li>
+      <li><a href="../ja/privacy.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li>
+      <li><a href="../ko/privacy.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans">简体中文</a></li>
+    </ul>
+  </details>
+</div>
+
+<h1>Política de Privacidade</h1>
+<p class="updated">FeltIt para iOS · Última atualização em 22 de setembro de 2026</p>
+<p class="notice">Esta tradução é fornecida apenas para fins informativos. Somente a <a href="../privacy.html" hreflang="en" data-lang="en">versão em inglês</a> tem validade jurídica e prevalece em caso de divergência.</p>
+
+<div class="summary">
+  <strong>Resumo</strong>
+  <p>O FeltIt não opera nenhum servidor, não exige conta e não contém código de análise, publicidade ou rastreamento de terceiros. As informações que você insere são armazenadas no seu dispositivo e, se a sincronização com o iCloud estiver ativada, no banco de dados privado da sua própria Conta Apple, ao qual o desenvolvedor não tem acesso.</p>
+  <p>O FeltIt lê dados do Apple Health com a sua permissão. Ele não grava dados no Apple Health. Os dados de saúde não são usados para publicidade ou marketing e não são divulgados a terceiros.</p>
+</div>
+
+<h2>1. Escopo e contato</h2>
+<p>O FeltIt é um aplicativo para iOS desenvolvido e publicado por Emad Rahman, desenvolvedor independente sediado no Canadá (“o desenvolvedor”). Esta política descreve como o aplicativo FeltIt para iOS e seus widgets da Tela de Início tratam as informações.</p>
+<p>Dúvidas sobre esta política podem ser enviadas para <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>.</p>
+
+<h2>2. Informações armazenadas pelo aplicativo</h2>
+<p>O FeltIt armazena três categorias de informações, todas geradas no seu dispositivo:</p>
+<ul>
+  <li><strong>Informações que você insere.</strong> As regiões do corpo que você registra, a intensidade e o tipo de sensação selecionados, se uma região foi marcada como normalizada, as observações que você escreve e a data e a hora de cada registro.</li>
+  <li><strong>Dados de saúde cuja leitura você autorizou.</strong> Mediante sua permissão explícita, o FeltIt lê seis categorias do Apple Health: treinos, análise do sono, variabilidade da frequência cardíaca (SDNN), frequência cardíaca em repouso, frequência respiratória e contagem de passos. O acesso é solicitado apenas para leitura; o aplicativo não grava dados no Apple Health.</li>
+  <li><strong>Ajustes do aplicativo.</strong> Preferências como o tema selecionado, as seções de análise exibidas e as notificações ativadas.</li>
+</ul>
+<p>O aplicativo não solicita nem armazena seu nome, endereço de e-mail, número de telefone, data de nascimento, localização precisa, contatos, fotos ou qualquer identificador governamental ou de saúde.</p>
+
+<h2>3. Locais de armazenamento</h2>
+<ul>
+  <li><strong>No dispositivo.</strong> As informações são armazenadas em um contêiner do aplicativo no seu iPhone, sujeito à proteção de arquivos do iOS e ao código do seu dispositivo. Os widgets da Tela de Início leem um resumo dessas informações a partir do mesmo contêiner no dispositivo.</li>
+  <li><strong>No índice de busca do iOS, para a Siri e o Spotlight.</strong> Para que seus registros possam ser encontrados no Spotlight e mencionados em solicitações à Siri, o FeltIt adiciona um resumo de cada registro ao índice de busca mantido pelo iOS no dispositivo. O resumo contém a data, as regiões do corpo, a maior intensidade, o tipo de sensação, se uma região foi marcada como normalizada e o treino associado, se houver. Para assinantes do FeltIt Pro, também é adicionado um resumo de cada crise. As observações só são incluídas se a opção “Incluir observações” estiver ativada em Ajustes › Siri e Busca, dentro do aplicativo; essa opção vem desativada por padrão. Os registros feitos no aplicativo também podem ser fornecidos ao iOS como sugestões de atalhos da Siri. O índice e essas sugestões são mantidos pelo iOS no dispositivo e não são transmitidos ao desenvolvedor.</li>
+  <li><strong>Solicitações à Siri.</strong> Quando você pergunta à Siri sobre suas informações ou faz um registro usando a Siri, a solicitação é processada pela Apple e a resposta é composta no dispositivo a partir dos seus registros armazenados. O processamento de solicitações à Siri pela Apple é regido pela <a href="https://www.apple.com/br/legal/privacy/">Política de Privacidade da Apple</a>. Nenhuma solicitação ou resposta é transmitida ao desenvolvedor.</li>
+  <li><strong>Na sua conta do iCloud, se a sincronização estiver ativada.</strong> Quando a sincronização com o iCloud está ativada nos ajustes do aplicativo, os registros e os ajustes são sincronizados por meio do serviço CloudKit da Apple com o banco de dados privado da sua própria Conta Apple. Esse armazenamento está sob o seu controle. O desenvolvedor não tem acesso a ele. O processamento desses dados pela Apple é regido pela <a href="https://www.apple.com/br/legal/privacy/">Política de Privacidade da Apple</a>. Enquanto a sincronização com o iCloud permanecer desativada, nenhuma informação é transmitida a partir do dispositivo.</li>
+</ul>
+
+<h2>4. Informações não coletadas</h2>
+<p>O aplicativo não contém framework de análise, framework de publicidade, kit de desenvolvimento de software para relatórios de falhas, login por redes sociais nem biblioteca de software de terceiros. Ele não faz solicitações de rede próprias, e o desenvolvedor não opera nenhum servidor relacionado a ele.</p>
+<p>Consequentemente, o desenvolvedor não recebe seus registros, observações, dados do Apple Health, informações sobre o seu uso do aplicativo, seu endereço IP ou qualquer identificador do dispositivo.</p>
+<p>Os dados de saúde e condicionamento físico não são usados para publicidade, marketing ou mineração de dados, e não são vendidos, alugados nem divulgados a terceiros.</p>
+
+<h2>5. Compras</h2>
+<p>O FeltIt Pro é vendido pelo sistema de compras dentro do app da Apple. A Apple processa a transação, e os dados de pagamento são tratados exclusivamente pela Apple. Eles não são transmitidos ao desenvolvedor ou ao aplicativo, nem ficam acessíveis ou armazenados por eles. O status da compra é verificado no seu dispositivo por meio do framework StoreKit da Apple.</p>
+<p>A Apple fornece ao desenvolvedor relatórios agregados de vendas e financeiros sobre unidades vendidas, receita e país. Esses relatórios não identificam clientes individuais.</p>
+
+<h2>6. Relatórios de falhas e diagnóstico</h2>
+<p>Se você ativou o ajuste “Compartilhar com Desenvolvedores” em Ajustes › Privacidade e Segurança › Análise e Melhorias no seu iPhone, a Apple poderá fornecer ao desenvolvedor registros de falhas e dados de desempenho relacionados ao FeltIt. Essas informações são coletadas e fornecidas pela Apple, e não pelo aplicativo, e a Apple afirma que elas não são associadas à sua identidade. O ajuste pode ser desativado a qualquer momento no iOS.</p>
+<p>O aplicativo mantém um registro de diagnóstico no dispositivo. Ele permanece no dispositivo e não é transmitido.</p>
+
+<h2>7. Notificações</h2>
+<p>Todas as notificações emitidas pelo FeltIt — lembretes para registrar após um treino, alertas preventivos, o resumo matinal e os acompanhamentos — são compostas e agendadas no dispositivo pelo iOS. Seu conteúdo não é transmitido a nenhum servidor. O aplicativo não envia notificações de marketing ou promocionais.</p>
+
+<h2>8. Correspondência com o suporte</h2>
+<p>Se você entrar em contato com o suporte por e-mail, o desenvolvedor receberá seu endereço de e-mail, o conteúdo da sua mensagem e, se a função “Falar com o suporte” do aplicativo tiver sido usada, a versão e o número de build do aplicativo, o modelo do dispositivo e a versão do iOS, inseridos automaticamente. Esse texto é exibido para revisão e pode ser editado antes do envio.</p>
+<p>Essa correspondência é usada exclusivamente para responder à sua solicitação e é mantida na caixa de correio do provedor de e-mail do desenvolvedor. Ela não é usada para nenhuma lista de e-mails.</p>
+
+<h2>9. Gerenciamento e exclusão das suas informações</h2>
+<ul>
+  <li>Cada registro pode ser editado ou apagado no aplicativo a qualquer momento.</li>
+  <li>O acesso ao Saúde pode ser revogado no app Saúde, em Compartilhamento › Apps, ou em Ajustes › Privacidade e Segurança › Saúde. O aplicativo deixa de ler novos dados imediatamente.</li>
+  <li>A sincronização com o iCloud pode ser desativada nos ajustes do aplicativo, mantendo as informações apenas no dispositivo.</li>
+  <li>As observações podem ser excluídas do índice de busca desativando “Incluir observações” em Ajustes › Siri e Busca, dentro do aplicativo. O FeltIt pode ser removido por completo da Siri e do Spotlight em Ajustes › Apps › FeltIt › Siri no iOS.</li>
+  <li>Apagar o aplicativo remove todo o seu armazenamento local do dispositivo.</li>
+  <li>A cópia no iCloud pode ser removida no iOS em Ajustes › [seu nome] › iCloud › Gerenciar Armazenamento da Conta.</li>
+</ul>
+<p>Como o desenvolvedor não mantém nenhuma cópia dessas informações, essas etapas constituem a exclusão completa.</p>
+
+<h2>10. Retenção</h2>
+<p>As informações são mantidas no seu dispositivo e, se a sincronização estiver ativada, na sua conta do iCloud até que você as apague. O aplicativo não expira nem apaga registros automaticamente. O desenvolvedor não mantém nenhuma cópia.</p>
+
+<h2>11. Crianças</h2>
+<p>O FeltIt não é direcionado a crianças e não se destina a pessoas menores de 13 anos. O aplicativo não transmite informações ao desenvolvedor, e informações de crianças não são coletadas intencionalmente.</p>
+
+<h2>12. Seus direitos</h2>
+<p><strong>Canadá.</strong> Nos termos da Personal Information Protection and Electronic Documents Act (PIPEDA), você tem o direito de acessar as informações pessoais que uma organização mantém sobre você, de solicitar a correção dessas informações e de apresentar uma reclamação ao Office of the Privacy Commissioner of Canada. As únicas informações pessoais mantidas pelo desenvolvedor são o conteúdo da correspondência com o suporte que você optar por enviar.</p>
+<p><strong>Reino Unido e Espaço Econômico Europeu.</strong> Se você estiver no Reino Unido ou no EEE, o UK GDPR e o Regulamento Geral sobre a Proteção de Dados (GDPR) garantem direitos de acesso, retificação, apagamento, limitação do tratamento, oposição e portabilidade dos dados, além do direito de apresentar reclamação à sua autoridade de controle nacional. Como o aplicativo trata as informações exclusivamente no seu dispositivo e na sua própria conta do iCloud, esses direitos são exercidos diretamente pelo aplicativo e pelo iOS.</p>
+<p><strong>Califórnia.</strong> Se você reside na Califórnia, a CCPA e a CPRA garantem o direito de saber quais informações pessoais são coletadas, de solicitar sua exclusão ou correção e de não sofrer discriminação por exercer esses direitos. O desenvolvedor não coleta, vende nem compartilha informações pessoais conforme definido por essa legislação.</p>
+<p>Para exercer qualquer um desses direitos em relação à correspondência com o suporte, escreva para <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>.</p>
+
+<h2>13. Alterações nesta política</h2>
+<p>Caso o tratamento de informações pelo FeltIt mude, esta página será atualizada e a data indicada acima será revisada. Alterações relevantes também serão indicadas nas notas de versão do aplicativo. A versão vigente desta política pode ser acessada no aplicativo em Ajustes › Sobre › Política de Privacidade.</p>
+
+<h2>14. Contato</h2>
+<p>Emad Rahman<br>
+<a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a></p>
+
+<footer>
+  <p><a href="../index.html">FeltIt</a> · <a href="./support.html">Suporte</a></p>
+</footer>
+
+</main>
+</body>
+</html>

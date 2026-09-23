@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistance — FeltIt</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f7;
+    --border: #e2e2e5;
+    --text: #1c1c1e;
+    --muted: #6a6a6f;
+    --accent: #E8724A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --border: #2c2c31;
+      --text: #f2f2f4;
+      --muted: #9a9aa1;
+      --accent: #F08A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 1rem; margin: 26px 0 6px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lede { color: var(--muted); margin-bottom: 34px; }
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin: 8px 0 8px;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .email { font-size: 1.1rem; font-weight: 600; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
+</style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/support.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/support.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/support.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/support.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/support.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/support.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/support.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/support.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/support.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/support.html">
+<script src="../lang.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="Langue: Français"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>Français</span></summary>
+    <ul>
+      <li><a href="../support.html" hreflang="en" lang="en" data-lang="en">English</a></li>
+      <li><a href="../de/support.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="../fr/support.html" hreflang="fr" lang="fr" data-lang="fr" aria-current="page">Français</a></li>
+      <li><a href="../es/support.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="../it/support.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="../pt-BR/support.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li>
+      <li><a href="../ja/support.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li>
+      <li><a href="../ko/support.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans">简体中文</a></li>
+    </ul>
+  </details>
+</div>
+
+<h1>Assistance FeltIt</h1>
+<p class="lede">Coordonnées et réponses aux questions fréquentes concernant l’application iOS FeltIt.</p>
+<p class="notice">Cette traduction est fournie à titre informatif. La <a href="../support.html" hreflang="en" data-lang="en">version anglaise</a> fait foi.</p>
+
+<div class="contact">
+  <p class="email"><a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a></p>
+  <p>Les demandes sont traitées par le développeur, généralement sous quelques jours ouvrés. Indiquer la version de l’application et le modèle de l’appareil facilite le diagnostic ; la fonction « Contacter l’assistance », dans Réglages › À propos, insère ces informations automatiquement.</p>
+</div>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Les entraînements n’apparaissent pas</h3>
+<p>Vérifiez que l’accès à Santé a été accordé : ouvrez l’app Santé et accédez à Partage › Apps › FeltIt. Les autorisations sont accordées par catégorie ; les entraînements peuvent donc être autorisés alors que les catégories de sommeil ou de fréquence cardiaque ne le sont pas. FeltIt lit l’intégralité de votre historique d’entraînements lorsque l’accès est accordé pour la première fois.</p>
+
+<h3>Les analyses ne sont pas disponibles</h3>
+<p>Les analyses nécessitent au moins trois signaux enregistrés sur une période d’au moins sept jours. En deçà de ce seuil, l’application indique ce qui manque encore plutôt que d’afficher une tendance que les données ne permettent pas d’établir.</p>
+
+<h3>Les données n’ont pas été transférées sur un nouvel iPhone</h3>
+<p>Activez la synchronisation iCloud dans les réglages de l’application sur les deux appareils, connectés au même compte Apple, et prévoyez plusieurs minutes en Wi-Fi pour la synchronisation initiale. Si la synchronisation n’était pas activée sur l’appareil précédent, aucune copie des données n’existe en dehors de celui-ci.</p>
+
+<h3>Un achat de Pro n’est pas reconnu</h3>
+<p>Sélectionnez « Restaurer les achats » dans Réglages › FeltIt Pro, ou sur l’écran d’abonnement. Vérifiez que l’appareil est connecté au compte Apple utilisé pour l’achat. Les achats sont associés au compte Apple et non à l’appareil.</p>
+
+<h3>Résilier un abonnement</h3>
+<p>Les abonnements sont gérés par Apple et non dans FeltIt. Ouvrez Réglages › [votre nom] › Abonnements sur iOS, ou rendez-vous sur <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. L’option À vie est un achat unique et ne nécessite aucune résiliation.</p>
+
+<h3>Supprimer vos données</h3>
+<p>Chaque saisie peut être supprimée dans l’application. La suppression de l’application efface toutes les informations stockées sur l’appareil. Si la synchronisation iCloud était activée, la copie iCloud peut être supprimée sur iOS dans Réglages › [votre nom] › iCloud › Gérer le stockage du compte. Tous les détails figurent dans la <a href="./privacy.html">politique de confidentialité</a>.</p>
+
+<h2>Signaler un problème</h2>
+<p>Un signalement doit indiquer les étapes suivies, le résultat observé et le résultat attendu, accompagnés des informations de version et d’appareil jointes par la fonction « Contacter l’assistance » de l’application. Des captures d’écran sont utiles pour les problèmes de mise en page ou d’affichage.</p>
+
+<footer>
+  <p><a href="../index.html">FeltIt</a> · <a href="./privacy.html">Politique de confidentialité</a></p>
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — FeltIt</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f7;
+    --border: #e2e2e5;
+    --text: #1c1c1e;
+    --muted: #6a6a6f;
+    --accent: #E8724A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --border: #2c2c31;
+      --text: #f2f2f4;
+      --muted: #9a9aa1;
+      --accent: #F08A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .updated { color: var(--muted); font-size: 0.95rem; margin-bottom: 32px; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px 8px;
+    margin: 32px 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 14px; }
+  .summary strong { display: block; margin-bottom: 10px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
+</style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/privacy.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<script src="../lang.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>简体中文</span></summary>
+    <ul>
+      <li><a href="../privacy.html" hreflang="en" lang="en" data-lang="en">English</a></li>
+      <li><a href="../de/privacy.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="../fr/privacy.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li>
+      <li><a href="../es/privacy.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="../it/privacy.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li>
+      <li><a href="../ja/privacy.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li>
+      <li><a href="../ko/privacy.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans" aria-current="page">简体中文</a></li>
+    </ul>
+  </details>
+</div>
+
+<h1>隐私政策</h1>
+<p class="updated">FeltIt（iOS 版）· 最后更新于 2026 年 9 月 22 日</p>
+<p class="notice">本译文仅供参考。仅<a href="../privacy.html" hreflang="en" data-lang="en">英文版本</a>具有法律效力；如有不一致，以英文版本为准。</p>
+
+<div class="summary">
+  <strong>摘要</strong>
+  <p>FeltIt 不运营任何服务器，无需注册账户，也不包含任何分析、广告或第三方跟踪代码。您输入的信息存储在您的设备上；如果启用了 iCloud 同步，还会存储在您本人 Apple 账户的私有数据库中，开发者无法访问。</p>
+  <p>FeltIt 在获得您许可后读取 Apple 健康的数据，但不会向 Apple 健康写入数据。健康数据不会用于广告或营销，也不会向第三方披露。</p>
+</div>
+
+<h2>1. 适用范围与联系方式</h2>
+<p>FeltIt 是由加拿大独立开发者 Emad Rahman（以下简称“开发者”）开发和发布的 iOS 应用程序。本政策说明 FeltIt iOS 应用程序及其主屏幕小组件如何处理信息。</p>
+<p>有关本政策的问询，请发送至 <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>。</p>
+
+<h2>2. 应用程序存储的信息</h2>
+<p>FeltIt 存储以下三类信息，均在您的设备上生成：</p>
+<ul>
+  <li><strong>您输入的信息。</strong>您记录的身体部位、所选的强度和感觉类型、某部位是否已标记为恢复、您撰写的备注，以及每条记录的日期和时间。</li>
+  <li><strong>您授权应用程序读取的健康数据。</strong>在获得您明确许可的前提下，FeltIt 从 Apple 健康读取六类数据：体能训练、睡眠分析、心率变异性（SDNN）、静息心率、呼吸频率和步数。访问权限仅以只读方式请求；应用程序不会向 Apple 健康写入数据。</li>
+  <li><strong>应用程序设置。</strong>例如所选主题、显示的分析板块以及已启用的通知等偏好设置。</li>
+</ul>
+<p>应用程序不会请求或存储您的姓名、电子邮件地址、电话号码、出生日期、精确位置、联系人、照片或任何政府或医疗机构的身份标识。</p>
+
+<h2>3. 存储位置</h2>
+<ul>
+  <li><strong>设备上。</strong>信息存储在您 iPhone 上的应用程序容器中，受 iOS 文件保护和设备密码保护。主屏幕小组件从设备上的同一容器读取这些信息的摘要。</li>
+  <li><strong>iOS 搜索索引（用于 Siri 和聚焦搜索）。</strong>为了让您的记录能在聚焦搜索中找到并在 Siri 请求中被引用，FeltIt 会将每条记录的摘要添加到 iOS 在设备上维护的搜索索引中。摘要包含日期、身体部位、最高强度、感觉类型、某部位是否已标记为恢复，以及关联的体能训练（如有）。对于 FeltIt Pro 订阅用户，还会添加每次复发的摘要。仅当应用程序内“设置”›“Siri与搜索”中的“包含备注”处于开启状态时，才会包含备注；该设置默认关闭。在应用程序中记录的内容还可能作为 Siri 快捷指令建议提供给 iOS。索引及这些建议由 iOS 保存在设备上，不会传输给开发者。</li>
+  <li><strong>Siri 请求。</strong>当您向 Siri 询问您的信息或通过 Siri 记录内容时，请求由 Apple 处理，回答则根据您已存储的记录在设备上生成。Apple 对 Siri 请求的处理受 <a href="https://www.apple.com.cn/legal/privacy/">Apple 隐私政策</a>约束。任何请求或回答都不会传输给开发者。</li>
+  <li><strong>您的 iCloud 账户（启用同步时）。</strong>在应用程序设置中启用 iCloud 同步后，记录和设置将通过 Apple 的 CloudKit 服务同步到您本人 Apple 账户的私有数据库。该存储由您控制，开发者无法访问。Apple 对这些数据的处理受 <a href="https://www.apple.com.cn/legal/privacy/">Apple 隐私政策</a>约束。在 iCloud 同步保持关闭期间，不会有任何信息从设备传出。</li>
+</ul>
+
+<h2>4. 不收集的信息</h2>
+<p>应用程序不包含任何分析框架、广告框架、崩溃报告软件开发工具包、社交账号登录或第三方软件库。应用程序本身不发出任何网络请求，开发者也未运营与之相关的任何服务器。</p>
+<p>因此，开发者不会收到您的记录、备注、Apple 健康数据、应用程序使用情况、IP 地址或任何设备标识符。</p>
+<p>健康与健身数据不会用于广告、营销或数据挖掘，也不会被出售、出租或向第三方披露。</p>
+
+<h2>5. 购买</h2>
+<p>FeltIt Pro 通过 Apple 的 App 内购买系统销售。交易由 Apple 处理，付款信息仅由 Apple 处理，不会传输给开发者或应用程序，开发者或应用程序也无法访问或存储这些信息。购买状态通过 Apple 的 StoreKit 框架在您的设备上验证。</p>
+<p>Apple 会向开发者提供涵盖销售数量、收入和国家或地区的汇总销售与财务报告。这些报告不会识别具体客户。</p>
+
+<h2>6. 崩溃报告与诊断</h2>
+<p>如果您在 iPhone 上的“设置”›“隐私与安全性”›“分析与改进”中开启了“与 App 开发者共享”，Apple 可能会向开发者提供与 FeltIt 相关的崩溃日志和性能数据。这些信息由 Apple 而非应用程序收集和提供，Apple 声明这些信息不会与您的身份关联。您可以随时在 iOS 中关闭该设置。</p>
+<p>应用程序在设备上保留一份诊断日志。该日志保留在设备上，不会被传输。</p>
+
+<h2>7. 通知</h2>
+<p>FeltIt 发出的所有通知（体能训练后的记录提示、提前提醒、晨间简报和后续跟进）均由 iOS 在设备上生成并安排。其内容不会传输到任何服务器。应用程序不会发送营销或推广通知。</p>
+
+<h2>8. 支持往来邮件</h2>
+<p>如果您通过电子邮件联系支持，开发者会收到您的电子邮件地址、邮件内容；如果使用了应用程序内的“联系支持”功能，还会收到自动插入的应用程序版本和构建版本号、设备型号及 iOS 版本。这些文字会在发送前显示供您查看，并可进行编辑。</p>
+<p>此类往来邮件仅用于回复您的问询，并保存在开发者所用电子邮件服务商的邮箱中，不会用于任何邮件列表。</p>
+
+<h2>9. 管理和删除您的信息</h2>
+<ul>
+  <li>您可以随时在应用程序中编辑或删除单条记录。</li>
+  <li>您可以在“健康”App 的“共享”›“App”中，或在“设置”›“隐私与安全性”›“健康”中撤销健康访问权限。应用程序将立即停止读取新数据。</li>
+  <li>您可以在应用程序设置中关闭 iCloud 同步，使信息仅保留在设备上。</li>
+  <li>在应用程序内的“设置”›“Siri与搜索”中关闭“包含备注”，即可将备注从搜索索引中排除。在 iOS 的“设置”›“App”›“FeltIt”›“Siri”中，可以将 FeltIt 从 Siri 和聚焦搜索中完全移除。</li>
+  <li>删除应用程序会从设备上移除其全部本地存储。</li>
+  <li>您可以在 iOS 的“设置”›“[您的姓名]”›“iCloud”›“管理账户储存空间”中移除 iCloud 副本。</li>
+</ul>
+<p>由于开发者不持有这些信息的任何副本，完成上述步骤即构成完全删除。</p>
+
+<h2>10. 保留期限</h2>
+<p>信息会保留在您的设备上，以及（启用同步时）您的 iCloud 账户中，直至您将其删除。应用程序不会使记录过期或自动删除记录。开发者不保留任何副本。</p>
+
+<h2>11. 儿童</h2>
+<p>FeltIt 并非面向儿童，也不适用于 13 岁以下人士。应用程序不会向开发者传输信息，也不会在知情的情况下收集儿童的信息。</p>
+
+<h2>12. 您的权利</h2>
+<p><strong>加拿大。</strong>根据《个人信息保护和电子文件法》（PIPEDA），您有权访问组织所持有的关于您的个人信息、要求更正该等信息，并向加拿大隐私专员办公室投诉。开发者持有的唯一个人信息是您选择发送的支持往来邮件内容。</p>
+<p><strong>英国和欧洲经济区。</strong>如果您位于英国或欧洲经济区，UK GDPR 和《通用数据保护条例》（GDPR）赋予您访问、更正、删除、限制处理、反对处理和数据可携带的权利，以及向您所在国家监管机构投诉的权利。由于应用程序仅在您的设备上和您本人的 iCloud 账户中处理信息，这些权利可直接通过应用程序和 iOS 行使。</p>
+<p><strong>加利福尼亚州。</strong>如果您是加利福尼亚州居民，CCPA 和 CPRA 赋予您了解所收集的个人信息、要求删除或更正该等信息，以及不因行使这些权利而受到歧视的权利。开发者不收集、出售或共享上述法律所定义的个人信息。</p>
+<p>如需就支持往来邮件行使上述任何权利，请联系 <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>。</p>
+
+<h2>13. 本政策的变更</h2>
+<p>如果 FeltIt 处理信息的方式发生变化，本页面将相应更新，并修改上方显示的日期。重大变更还将在应用程序的版本说明中注明。本政策的现行版本可在应用程序内的“设置”›“关于”›“隐私政策”中查看。</p>
+
+<h2>14. 联系方式</h2>
+<p>Emad Rahman<br>
+<a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a></p>
+
+<footer>
+  <p><a href="../index.html">FeltIt</a> · <a href="./support.html">支持</a></p>
+</footer>
+
+</main>
+</body>
+</html>

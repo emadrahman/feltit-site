@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — FeltIt</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f7;
+    --border: #e2e2e5;
+    --text: #1c1c1e;
+    --muted: #6a6a6f;
+    --accent: #E8724A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --border: #2c2c31;
+      --text: #f2f2f4;
+      --muted: #9a9aa1;
+      --accent: #F08A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .updated { color: var(--muted); font-size: 0.95rem; margin-bottom: 32px; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px 8px;
+    margin: 32px 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 14px; }
+  .summary strong { display: block; margin-bottom: 10px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
+</style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/privacy.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/privacy.html">
+<script src="../lang.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="言語: 日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>日本語</span></summary>
+    <ul>
+      <li><a href="../privacy.html" hreflang="en" lang="en" data-lang="en">English</a></li>
+      <li><a href="../de/privacy.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="../fr/privacy.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li>
+      <li><a href="../es/privacy.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="../it/privacy.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li>
+      <li><a href="../ja/privacy.html" hreflang="ja" lang="ja" data-lang="ja" aria-current="page">日本語</a></li>
+      <li><a href="../ko/privacy.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans">简体中文</a></li>
+    </ul>
+  </details>
+</div>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">FeltIt for iOS · 最終更新日：2026年9月22日</p>
+<p class="notice">この翻訳は参考として提供するものです。法的に有効なのは<a href="../privacy.html" hreflang="en" data-lang="en">英語版</a>のみであり、内容に相違がある場合は英語版が優先します。</p>
+
+<div class="summary">
+  <strong>概要</strong>
+  <p>FeltItはサーバを運用しておらず、アカウントを必要とせず、解析、広告、または第三者によるトラッキングのためのコードを一切含みません。入力された情報はお使いのデバイスに保存され、iCloud同期が有効な場合はご自身のApple Accountのプライベートデータベースにも保存されます。デベロッパはこれにアクセスできません。</p>
+  <p>FeltItは、お客様の許可を得てApple Healthのデータを読み取ります。Apple Healthへの書き込みは行いません。ヘルスケアデータが広告やマーケティングに使用されることはなく、第三者に開示されることもありません。</p>
+</div>
+
+<h2>1. 適用範囲および連絡先</h2>
+<p>FeltItは、カナダを拠点とする独立系デベロッパであるEmad Rahman（以下「デベロッパ」）が開発・公開しているiOSアプリケーションです。本ポリシーは、iOSアプリケーションFeltItおよびそのホーム画面ウィジェットによる情報の取り扱いについて説明するものです。</p>
+<p>本ポリシーに関するお問い合わせは、<a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a> までお送りください。</p>
+
+<h2>2. アプリケーションが保存する情報</h2>
+<p>FeltItは、いずれもお使いのデバイス上で生成される、次の3種類の情報を保存します。</p>
+<ul>
+  <li><strong>お客様が入力する情報。</strong> 記録した身体の部位、選択した強度と感覚の種類、部位が回復済みとしてマークされたかどうか、作成したメモ、および各記録の日時。</li>
+  <li><strong>読み取りを許可されたヘルスケアデータ。</strong> お客様の明示的な許可を条件として、FeltItはApple Healthから次の6つのカテゴリを読み取ります：ワークアウト、睡眠分析、心拍変動（SDNN）、安静時心拍数、呼吸数、歩数。アクセスは読み取り専用で要求され、アプリケーションがApple Healthにデータを書き込むことはありません。</li>
+  <li><strong>アプリケーションの設定。</strong> 選択したテーマ、表示する分析セクション、有効にした通知などの環境設定。</li>
+</ul>
+<p>アプリケーションは、お客様の氏名、メールアドレス、電話番号、生年月日、正確な位置情報、連絡先、写真、または政府機関や医療機関の識別番号を要求したり保存したりすることはありません。</p>
+
+<h2>3. 保存場所</h2>
+<ul>
+  <li><strong>デバイス上。</strong> 情報はお使いのiPhone上のアプリケーションのコンテナに保存され、iOSのファイル保護およびデバイスのパスコードによって保護されます。ホーム画面ウィジェットは、この情報の概要をデバイス上の同じコンテナから読み取ります。</li>
+  <li><strong>SiriとSpotlightのためのiOS検索インデックス。</strong> 記録をSpotlightで検索したりSiriへのリクエストで参照したりできるよう、FeltItは各記録の概要を、iOSがデバイス上で管理する検索インデックスに追加します。概要には、日付、身体の部位、最も高い強度、感覚の種類、部位が回復済みとしてマークされたかどうか、および関連するワークアウトが含まれます。FeltIt Proのサブスクライバーについては、各再発の概要も追加されます。メモは、アプリケーション内の「設定」›「Siriと検索」で「メモを含める」がオンになっている場合にのみ含まれます。この設定はデフォルトでオフです。また、アプリケーション内で入力した記録は、Siriショートカットの候補としてiOSに提供される場合があります。インデックスおよびこれらの候補はiOSによってデバイス上に保持され、デベロッパに送信されることはありません。</li>
+  <li><strong>Siriへのリクエスト。</strong> ご自身の情報についてSiriに質問したり、Siriを使って記録を入力したりすると、リクエストはAppleによって処理され、応答は保存されている記録からデバイス上で作成されます。AppleによるSiriリクエストの処理には、<a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>が適用されます。リクエストや応答がデベロッパに送信されることはありません。</li>
+  <li><strong>iCloudアカウント（同期が有効な場合）。</strong> アプリケーションの設定でiCloud同期が有効になっている場合、記録と設定はAppleのCloudKitサービスを通じて、ご自身のApple Accountのプライベートデータベースと同期されます。このストレージはお客様の管理下にあり、デベロッパはアクセスできません。Appleによる当該データの処理には、<a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>が適用されます。iCloud同期が無効のままである場合、情報がデバイスから送信されることはありません。</li>
+</ul>
+
+<h2>4. 収集しない情報</h2>
+<p>アプリケーションには、解析フレームワーク、広告フレームワーク、クラッシュレポート用のソフトウェア開発キット、ソーシャルログイン、または第三者のソフトウェアライブラリは一切含まれていません。アプリケーション自体がネットワークリクエストを行うことはなく、デベロッパがアプリケーションに関連してサーバを運用することもありません。</p>
+<p>したがって、デベロッパがお客様の記録、メモ、Apple Healthのデータ、アプリケーションの利用状況、IPアドレス、またはデバイス識別子を受け取ることはありません。</p>
+<p>健康およびフィットネスのデータが広告、マーケティング、またはデータマイニングに使用されることはなく、販売、貸与、または第三者に開示されることもありません。</p>
+
+<h2>5. 購入</h2>
+<p>FeltIt Proは、AppleのApp内課金システムを通じて販売されます。取引はAppleが処理し、支払い情報はAppleのみが取り扱います。支払い情報がデベロッパやアプリケーションに送信されたり、アクセスされたり、保存されたりすることはありません。購入状況は、AppleのStoreKitフレームワークによりお使いのデバイス上で確認されます。</p>
+<p>Appleは、販売数、収益、国を対象とした集計済みの販売および財務レポートをデベロッパに提供します。これらのレポートによって個々のお客様が特定されることはありません。</p>
+
+<h2>6. クラッシュレポートおよび診断</h2>
+<p>iPhoneの「設定」›「プライバシーとセキュリティ」›「解析および改善」で「App デベロッパと共有」を有効にしている場合、AppleはFeltItに関するクラッシュログおよびパフォーマンスデータをデベロッパに提供することがあります。この情報はアプリケーションではなくAppleが収集・提供するものであり、Appleはお客様の身元とは関連付けられていないとしています。この設定はiOSでいつでも無効にできます。</p>
+<p>アプリケーションはデバイス上に診断ログを保持します。このログはデバイス上に留まり、送信されることはありません。</p>
+
+<h2>7. 通知</h2>
+<p>FeltItが発行するすべての通知（ワークアウト後の記録の案内、事前の注意喚起、朝のブリーフィング、フォローアップの確認）は、iOSによってデバイス上で作成およびスケジュールされます。その内容がサーバに送信されることはありません。アプリケーションがマーケティングや宣伝目的の通知を送信することはありません。</p>
+
+<h2>8. サポートとのやり取り</h2>
+<p>メールでサポートに連絡された場合、デベロッパはお客様のメールアドレス、メッセージの内容、およびアプリケーション内の「サポートに連絡」機能を使用した場合は自動的に挿入されるアプリケーションのバージョンとビルド番号、デバイスの機種、iOSのバージョンを受け取ります。このテキストは送信前に表示され、編集することができます。</p>
+<p>このようなやり取りは、お問い合わせへの回答のためにのみ使用され、デベロッパが利用するメールプロバイダのメールボックスに保管されます。メーリングリストに使用されることはありません。</p>
+
+<h2>9. 情報の管理と削除</h2>
+<ul>
+  <li>個々の記録は、アプリケーション内でいつでも編集または削除できます。</li>
+  <li>ヘルスケアへのアクセスは、ヘルスケアアプリの「共有」›「App」、または「設定」›「プライバシーとセキュリティ」›「ヘルスケア」で取り消すことができます。アプリケーションは直ちに新しいデータの読み取りを停止します。</li>
+  <li>iCloud同期はアプリケーションの設定で無効にでき、その場合、情報はデバイス上にのみ保持されます。</li>
+  <li>アプリケーション内の「設定」›「Siriと検索」で「メモを含める」をオフにすると、メモを検索インデックスから除外できます。iOSの「設定」›「アプリ」›「FeltIt」›「Siri」で、FeltItをSiriおよびSpotlightから完全に除外できます。</li>
+  <li>アプリケーションを削除すると、そのローカルストレージ全体がデバイスから消去されます。</li>
+  <li>iCloud上のコピーは、iOSの「設定」›「[ユーザ名]」›「iCloud」›「アカウントのストレージを管理」で削除できます。</li>
+</ul>
+<p>デベロッパはこれらの情報のコピーを保持していないため、上記の手順により完全に削除されます。</p>
+
+<h2>10. 保持期間</h2>
+<p>情報は、お客様が削除するまで、お使いのデバイスおよび同期が有効な場合はiCloudアカウントに保持されます。アプリケーションが記録を失効させたり自動的に削除したりすることはありません。デベロッパがコピーを保持することはありません。</p>
+
+<h2>11. 子ども</h2>
+<p>FeltItは子どもを対象としておらず、13歳未満の方による使用を想定していません。アプリケーションはデベロッパに情報を送信せず、子どもの情報を故意に収集することはありません。</p>
+
+<h2>12. お客様の権利</h2>
+<p><strong>カナダ。</strong> 個人情報保護および電子文書法（PIPEDA）に基づき、お客様は、組織が保有するご自身に関する個人情報にアクセスし、その訂正を求め、カナダ・プライバシー・コミッショナー事務局に苦情を申し立てる権利を有します。デベロッパが保有する個人情報は、お客様が送信することを選択したサポートとのやり取りの内容のみです。</p>
+<p><strong>英国および欧州経済領域。</strong> 英国またはEEAに所在する場合、英国GDPRおよびEU一般データ保護規則（GDPR）により、アクセス、訂正、消去、処理の制限、異議申し立て、データポータビリティの権利、ならびに各国の監督機関に苦情を申し立てる権利が認められています。アプリケーションは情報をお使いのデバイスおよびご自身のiCloudアカウント内でのみ処理するため、これらの権利はアプリケーションおよびiOSを通じて直接行使されます。</p>
+<p><strong>カリフォルニア州。</strong> カリフォルニア州の居住者である場合、CCPAおよびCPRAにより、収集される個人情報を知る権利、その削除または訂正を求める権利、およびこれらの権利の行使を理由に差別を受けない権利が認められています。デベロッパは、これらの法律の定義における個人情報を収集、販売、または共有しません。</p>
+<p>サポートとのやり取りに関してこれらの権利を行使するには、<a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a> までご連絡ください。</p>
+
+<h2>13. 本ポリシーの変更</h2>
+<p>FeltItによる情報の取り扱いが変更された場合、本ページを更新し、上記の日付を改訂します。重要な変更については、アプリケーションのリリースノートにも記載します。本ポリシーの最新版は、アプリケーション内の「設定」›「情報」›「プライバシーポリシー」から参照できます。</p>
+
+<h2>14. 連絡先</h2>
+<p>Emad Rahman<br>
+<a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a></p>
+
+<footer>
+  <p><a href="../index.html">FeltIt</a> · <a href="./support.html">サポート</a></p>
+</footer>
+
+</main>
+</body>
+</html>

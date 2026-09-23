@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-autolang>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,10 +63,80 @@
     color: var(--muted);
     font-size: 0.9rem;
   }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
 </style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/support.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/support.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/support.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/support.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/support.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/support.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/support.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/support.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/support.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/support.html">
+<script src="lang.js"></script>
 </head>
 <body>
 <main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>English</span></summary>
+    <ul>
+      <li><a href="support.html" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li>
+      <li><a href="de/support.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="fr/support.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li>
+      <li><a href="es/support.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="it/support.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="pt-BR/support.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li>
+      <li><a href="ja/support.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li>
+      <li><a href="ko/support.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans">简体中文</a></li>
+    </ul>
+  </details>
+</div>
 
 <h1>FeltIt Support</h1>
 <p class="lede">Contact details and answers to common questions for the FeltIt iOS application.</p>
@@ -79,7 +149,7 @@
 <h2>Common questions</h2>
 
 <h3>Workouts are not appearing</h3>
-<p>Confirm that Health access has been granted: open the Apple Health application and go to Sharing › Apps › FeltIt. Permissions are granted per category, so workouts may be permitted while sleep or heart-rate categories are not. FeltIt reads the previous 90 days of workouts when access is first granted.</p>
+<p>Confirm that Health access has been granted: open the Apple Health application and go to Sharing › Apps › FeltIt. Permissions are granted per category, so workouts may be permitted while sleep or heart-rate categories are not. FeltIt reads your full workout history when access is first granted.</p>
 
 <h3>Insights are unavailable</h3>
 <p>Insights require a minimum of three logged signals spanning at least seven days. Below that threshold the application states what is still required rather than displaying a pattern the data does not support.</p>

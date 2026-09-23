@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — FeltIt</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f7;
+    --border: #e2e2e5;
+    --text: #1c1c1e;
+    --muted: #6a6a6f;
+    --accent: #E8724A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --border: #2c2c31;
+      --text: #f2f2f4;
+      --muted: #9a9aa1;
+      --accent: #F08A63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 44px 0 12px;
+    letter-spacing: -0.01em;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 1rem; margin: 26px 0 6px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lede { color: var(--muted); margin-bottom: 34px; }
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin: 8px 0 8px;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .email { font-size: 1.1rem; font-weight: 600; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 12px;
+    margin: -12px 0 28px;
+  }
+  .topbar { display: flex; justify-content: flex-end; margin: -28px 0 20px; }
+  .lang { position: relative; }
+  .lang summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang svg { width: 16px; height: 16px; flex: none; }
+  .lang ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 10;
+    min-width: 200px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  }
+  .lang li { margin: 0; }
+  .lang ul a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text); }
+  .lang ul a:hover { background: var(--surface); text-decoration: none; }
+  .lang ul a[aria-current] { color: var(--accent); font-weight: 600; }
+</style>
+<link rel="alternate" hreflang="en" href="https://emadrahman.github.io/feltit-site/support.html">
+<link rel="alternate" hreflang="de" href="https://emadrahman.github.io/feltit-site/de/support.html">
+<link rel="alternate" hreflang="fr" href="https://emadrahman.github.io/feltit-site/fr/support.html">
+<link rel="alternate" hreflang="es" href="https://emadrahman.github.io/feltit-site/es/support.html">
+<link rel="alternate" hreflang="it" href="https://emadrahman.github.io/feltit-site/it/support.html">
+<link rel="alternate" hreflang="pt-BR" href="https://emadrahman.github.io/feltit-site/pt-BR/support.html">
+<link rel="alternate" hreflang="ja" href="https://emadrahman.github.io/feltit-site/ja/support.html">
+<link rel="alternate" hreflang="ko" href="https://emadrahman.github.io/feltit-site/ko/support.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://emadrahman.github.io/feltit-site/zh-Hans/support.html">
+<link rel="alternate" hreflang="x-default" href="https://emadrahman.github.io/feltit-site/support.html">
+<script src="../lang.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <details class="lang">
+    <summary aria-label="言語: 日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/></svg><span>日本語</span></summary>
+    <ul>
+      <li><a href="../support.html" hreflang="en" lang="en" data-lang="en">English</a></li>
+      <li><a href="../de/support.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li>
+      <li><a href="../fr/support.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li>
+      <li><a href="../es/support.html" hreflang="es" lang="es" data-lang="es">Español</a></li>
+      <li><a href="../it/support.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li>
+      <li><a href="../pt-BR/support.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li>
+      <li><a href="../ja/support.html" hreflang="ja" lang="ja" data-lang="ja" aria-current="page">日本語</a></li>
+      <li><a href="../ko/support.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li>
+      <li><a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-Hans">简体中文</a></li>
+    </ul>
+  </details>
+</div>
+
+<h1>FeltItサポート</h1>
+<p class="lede">iOSアプリケーションFeltItの連絡先およびよくある質問への回答です。</p>
+<p class="notice">この翻訳は参考として提供するものです。正式な内容は<a href="../support.html" hreflang="en" data-lang="en">英語版</a>をご確認ください。</p>
+
+<div class="contact">
+  <p class="email"><a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a></p>
+  <p>お問い合わせにはデベロッパが対応し、通常は数営業日以内に回答します。アプリケーションのバージョンとデバイスの機種をお知らせいただくと診断に役立ちます。「設定」›「情報」の「サポートに連絡」機能を使用すると、これらの情報が自動的に挿入されます。</p>
+</div>
+
+<h2>よくある質問</h2>
+
+<h3>ワークアウトが表示されない</h3>
+<p>ヘルスケアへのアクセスが許可されていることを確認してください。ヘルスケアアプリを開き、「共有」›「App」›「FeltIt」に進みます。許可はカテゴリごとに設定されるため、ワークアウトは許可されていても、睡眠や心拍数のカテゴリは許可されていない場合があります。初めてアクセスが許可されると、FeltItはワークアウトの全履歴を読み取ります。</p>
+
+<h3>分析が利用できない</h3>
+<p>分析を利用するには、7日以上の期間にわたって3件以上のシグナルが記録されている必要があります。この基準に満たない場合、アプリケーションはデータが裏付けないパターンを表示するのではなく、あと何が必要かを表示します。</p>
+
+<h3>新しいiPhoneにデータが移行されない</h3>
+<p>両方のデバイスで同じApple Accountにサインインした状態で、アプリケーションの設定でiCloud同期を有効にし、最初の同期のためにWi-Fi接続で数分間お待ちください。以前のデバイスで同期が有効になっていなかった場合、そのデバイス以外にデータのコピーは存在しません。</p>
+
+<h3>Proの購入が認識されない</h3>
+<p>「設定」›「FeltIt Pro」、または購入画面で「購入を復元」を選択してください。購入時に使用したApple Accountでデバイスにサインインしていることを確認してください。購入はデバイスではなくApple Accountに関連付けられています。</p>
+
+<h3>サブスクリプションの解約</h3>
+<p>サブスクリプションはFeltIt内ではなくAppleによって管理されています。iOSの「設定」›「[ユーザ名]」›「サブスクリプション」を開くか、<a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a> にアクセスしてください。買い切りのオプションは1回限りの購入であり、解約の必要はありません。</p>
+
+<h3>データの削除</h3>
+<p>個々の記録はアプリケーション内で削除できます。アプリケーションを削除すると、デバイスに保存されているすべての情報が消去されます。iCloud同期を有効にしていた場合、iCloud上のコピーはiOSの「設定」›「[ユーザ名]」›「iCloud」›「アカウントのストレージを管理」で削除できます。詳細は<a href="./privacy.html">プライバシーポリシー</a>に記載されています。</p>
+
+<h2>問題の報告</h2>
+<p>報告には、実行した手順、実際の結果、期待される結果を記載し、アプリケーション内の「サポートに連絡」機能によって添付されるバージョンおよびデバイスの情報を含めてください。レイアウトや表示に関する問題には、スクリーンショットが役立ちます。</p>
+
+<footer>
+  <p><a href="../index.html">FeltIt</a> · <a href="./privacy.html">プライバシーポリシー</a></p>
+</footer>
+
+</main>
+</body>
+</html>
