@@ -139,12 +139,13 @@
 </div>
 
 <h1>Privacy Policy</h1>
-<p class="updated">FeltIt for iOS · Last updated 23 October 2026</p>
+<p class="updated">FeltIt for iOS · Last updated 2 November 2026</p>
 
 <div class="summary">
   <strong>Summary</strong>
   <p>FeltIt does not operate any servers, does not require an account, and contains no advertising or third-party tracking code. Information you enter is stored on your device and, if iCloud sync is enabled, in the private database of your own Apple Account, which the developer cannot access.</p>
   <p>FeltIt sends anonymous usage statistics to an analytics service, TelemetryDeck. They are enabled by default, may be disabled in the application, and never include your entries, notes, or Apple Health data. See section 4.</p>
+  <p>FeltIt uses RevenueCat, a subscription service, to confirm access to FeltIt Pro. RevenueCat receives device identifiers and technical details, and information about any purchase. It never receives your entries, notes, or Apple Health data. See section 5.</p>
   <p>FeltIt reads data from Apple Health with your permission. It does not write to Apple Health. Health data is not used for advertising or marketing and is not disclosed to third parties.</p>
 </div>
 
@@ -180,12 +181,21 @@
   <li><strong>The first time sharing begins:</strong> a signal from the analytics service noting a new installation.</li>
 </ul>
 <p>These signals are associated only with a one-way hash of the identifier iOS assigns to applications from the same developer on your device. It is not linked to your name, Apple Account, or contact details, and TelemetryDeck states that it anonymises identifiers so that they cannot be traced back to a person. <strong>The signals never include the content of your entries:</strong> no body region, severity, sensation type, resolution, note, entry date, Capacity or Recovery figure, and no Apple Health data of any kind. TelemetryDeck states that it never stores IP addresses and that its servers are located in the European Union, in Germany and the Netherlands. The developer uses the statistics solely to understand and improve the application, and does not use them for advertising or tracking.</p>
-<p>Apart from this, the application contains no advertising framework, crash-reporting software development kit, social login, or other third-party software library. Its own network activity consists of the anonymous usage statistics above, while they are enabled, and Apple's App Store verifying the price of FeltIt Pro and your purchase, described below. No server is operated by the developer in connection with the application. The developer does not receive your entries, notes, Apple Health data, or IP address, and cannot identify you from the usage statistics.</p>
+<p>Apart from this and RevenueCat, described in section 5, the application contains no advertising framework, crash-reporting software development kit, social login, or other third-party software library. Its own network activity consists of the anonymous usage statistics above, while they are enabled, RevenueCat, and Apple's App Store verifying the price of FeltIt Pro and your purchase, described below. No server is operated by the developer in connection with the application. The developer does not receive your entries, notes, or Apple Health data, and cannot identify you from the usage statistics.</p>
 <p>Health and fitness data is not used for advertising, marketing, or data mining, and is not sold, rented, or disclosed to third parties.</p>
 
 <h2>5. Purchases</h2>
-<p>FeltIt Pro is sold through Apple's In-App Purchase system. Apple processes the transaction, and payment details are handled solely by Apple. They are not transmitted to, accessible by, or stored by the developer or the application. Purchase status is verified on your device through Apple's StoreKit framework.</p>
+<p>FeltIt Pro is sold through Apple's In-App Purchase system. Apple processes the transaction, and payment details are handled solely by Apple. They are not transmitted to, accessible by, or stored by the developer or the application. Purchase status is verified on your device through Apple's StoreKit framework and through RevenueCat, described below.</p>
 <p>Apple provides the developer with aggregated sales and financial reports covering units sold, revenue, and country. These reports do not identify individual customers.</p>
+<p>FeltIt uses <a href="https://www.revenuecat.com">RevenueCat</a>, a service that manages in-app purchases and subscriptions on behalf of the developer, to record purchases of FeltIt Pro, confirm access to it, and provide the developer with subscription records and statistics. Its software library runs each time the application is opened, whether or not you have made a purchase, and is not affected by the Share Anonymous Usage setting.</p>
+<p>RevenueCat receives:</p>
+<ul>
+  <li><strong>Identifiers:</strong> a random identifier generated for the application on your device, and the identifier iOS assigns to applications from the same developer on your device.</li>
+  <li><strong>Technical details:</strong> the device model, operating system version, application version and build, preferred languages, the country of your App Store storefront, how the application was installed, and, as with any internet connection, your device's IP address.</li>
+  <li><strong>Where you have made a purchase:</strong> the product, price, currency, purchase and expiry dates, and Apple's transaction information for the purchase.</li>
+</ul>
+<p>RevenueCat does not receive your name, your Apple Account details, or your payment details, and does not receive your entries, notes, Capacity or Recovery figures, or Apple Health data. The developer can view these records in RevenueCat, where they are listed by the random identifier, and does not use them to identify you or for advertising or tracking.</p>
+<p>RevenueCat processes this information on behalf of the developer. It states that it stores customer data with Amazon Web Services in the United States, so this information may be transferred outside your country. RevenueCat's handling of information is described in the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
 <p>While anonymous usage statistics are enabled, FeltIt also informs its analytics service when a purchase completes, with the details listed in section 4. It does not send your name, your Apple Account, or your payment details.</p>
 
 <h2>6. Crash reports and diagnostics</h2>
@@ -209,20 +219,21 @@
   <li>Deleting the application removes its entire local store from the device.</li>
   <li>The iCloud copy may be removed under iOS Settings › [your name] › iCloud › Manage Account Storage.</li>
 </ul>
-<p>As no copy of this information is held by the developer, these steps constitute complete deletion. The anonymous usage statistics described in section 4 cannot be associated with you, and are addressed under Retention below.</p>
+<p>As no copy of this information is held by the developer, these steps constitute complete deletion. The anonymous usage statistics described in section 4 cannot be associated with you, and are addressed under Retention below. The RevenueCat purchase records described in section 5 are not removed by these steps and are also addressed under Retention.</p>
 
 <h2>10. Retention</h2>
 <p>Information is retained on your device, and in your iCloud account where sync is enabled, until you delete it. The application does not expire or automatically delete entries. No copy is retained by the developer.</p>
 <p>Anonymous usage statistics are retained by TelemetryDeck. TelemetryDeck states that it has no fixed schedule for deleting stored signals, and that it expects to delete them after seven to ten years without guaranteeing it. As the statistics cannot be associated with an individual, the developer cannot locate and delete those relating to one person. Disabling Share Anonymous Usage stops new statistics from being sent.</p>
+<p>Purchase records and related information are retained by RevenueCat under its retention policy. Its privacy policy states no fixed period for them. They are not removed by deleting the application. A request to delete them may be sent to the developer; as they are not associated with your name, the developer may need details of the purchase, such as its App Store receipt, to locate them.</p>
 
 <h2>11. Children</h2>
-<p>FeltIt is not directed at children and is not intended for use by persons under 13 years of age. The application sends only the anonymous usage statistics described in section 4, which do not identify anyone, and information from children is not knowingly collected.</p>
+<p>FeltIt is not directed at children and is not intended for use by persons under 13 years of age. The application sends only the anonymous usage statistics described in section 4 and the purchase-related information described in section 5, neither of which includes a name or contact details, and information from children is not knowingly collected.</p>
 
 <h2>12. Your rights</h2>
-<p><strong>Canada.</strong> Under the Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to access personal information held about you by an organisation, to request correction of that information, and to make a complaint to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>. The only personal information held by the developer is the content of support correspondence you elect to send; the anonymous usage statistics in section 4 cannot be associated with you.</p>
-<p><strong>United Kingdom and European Economic Area.</strong> Where you are located in the United Kingdom or the EEA, the UK GDPR and the GDPR provide rights of access, rectification, erasure, restriction of processing, objection, and data portability, together with the right to lodge a complaint with your national supervisory authority. As the application processes your entries and Apple Health data solely on your device and within your own iCloud account, these rights are exercised directly through the application and through iOS, including by disabling anonymous usage statistics (section 4).</p>
-<p><strong>California.</strong> Where you are a California resident, the CCPA and CPRA provide rights to know what personal information is collected, to request its deletion or correction, and not to be subject to discrimination for exercising those rights. The developer does not sell or share personal information as those terms are defined by that legislation. The anonymous usage statistics are described in section 4.</p>
-<p>To exercise any of these rights in respect of support correspondence, contact <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>.</p>
+<p><strong>Canada.</strong> Under the Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to access personal information held about you by an organisation, to request correction of that information, and to make a complaint to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>. The only personal information held by the developer is the content of support correspondence you elect to send; the anonymous usage statistics in section 4 cannot be associated with you. In addition, RevenueCat holds the purchase records described in section 5 on the developer's behalf.</p>
+<p><strong>United Kingdom and European Economic Area.</strong> Where you are located in the United Kingdom or the EEA, the UK GDPR and the GDPR provide rights of access, rectification, erasure, restriction of processing, objection, and data portability, together with the right to lodge a complaint with your national supervisory authority. As the application processes your entries and Apple Health data solely on your device and within your own iCloud account, these rights are exercised directly through the application and through iOS, including by disabling anonymous usage statistics (section 4). Requests concerning the RevenueCat purchase records described in section 5 may be sent to the developer.</p>
+<p><strong>California.</strong> Where you are a California resident, the CCPA and CPRA provide rights to know what personal information is collected, to request its deletion or correction, and not to be subject to discrimination for exercising those rights. The developer does not sell or share personal information as those terms are defined by that legislation. The anonymous usage statistics are described in section 4. The RevenueCat purchase records are described in section 5.</p>
+<p>To exercise any of these rights in respect of support correspondence or the RevenueCat purchase records, contact <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>.</p>
 
 <h2>13. Changes to this policy</h2>
 <p>Where FeltIt's handling of information changes, this page will be updated and the date shown above revised. Material changes will additionally be noted in the application's release notes. The current version of this policy is accessible within the application under Settings › About › Privacy Policy.</p>
